@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css" media="screen and (max-width: 767px)">
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 767px)">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 767px)">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#305f4d" />
+    <script>
+      if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/QuranIframeViewer/service-worker.js')
+        .then(reg => console.log('SW registered:', reg.scope))
+        .catch(err => console.error('SW registration failed:', err));
+    });
+    }
+  </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quran Viewer</title>
 </head>
 <body>
     <iframe class="myiframe" id="myiframe" src="https://www.easyquran-eg.com/qrhafs/page/1"></iframe>

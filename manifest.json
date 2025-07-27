@@ -1,0 +1,15 @@
+{
+  "name": "Quran Iframe Viewer",
+  "short_name": "QuranViewer",
+  "start_url": "/QuranIframeViewer/",
+  "display": "standalone",
+  "background_color": "#305f4d",
+  "theme_color": "#305f4d",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "222x222",
+      "type": "image/png"
+    }
+  ]
+}

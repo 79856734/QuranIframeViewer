@@ -26,29 +26,6 @@ button {
   border-radius: 6px;
 }
 
-button:hover {
-  background-color: #45866d;
-  transition: background-color 0.2s linear;
-}
-
-button:active {
-  background-color: #218838; 
-  transition: background-color 0s linear;
-}
-
-input {
-  background-color: #fffcd7;
-  color: white;
-  border-color: #218838;
-  border-style: solid;
-  border-width: 4px;
-  border-radius: 4px;
-  padding: 7px;
-  padding-left: 0px;
-  width: -10px;
-  margin-left: 5vw;
-}
-
 .myiframe {
   position: fixed;
   top: 0;
