@@ -1,0 +1,69 @@
+ html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+ 
+ body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+ }
+ 
+ h2 {
+    color: rgb(50, 117, 29);
+    font-size: 64px;
+ }
+
+ .custom {
+    color: blue;
+ }
+
+ button {
+    background-color: #305f4d; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 6px;
+ }
+
+button:hover {
+   background-color: #45866d;
+   transition: background-color 0.2s linear;
+}
+
+button:active {
+   background-color: #218838; 
+   transition: background-color 0s linear;
+}
+ .orange {
+   background-color: orange;
+   border-radius: 10px;
+   padding-right: 10px;
+   padding-left: 10px;
+ }
+
+ input {
+   background-color: #fffcd7;
+   color: white;
+   border-color: #218838;
+   border-style: solid;
+   border-width: 4px;
+   border-radius: 4px;
+   padding: 10px;
+   padding-left: 0px;
+   width: -10px;
+   margin-left: 5vw;
+ }
+
+ .myiframe {
+   position:fixed; top:0; left:0; right:0; height:calc(100% - 64px); width:100%; border:none; margin:0; padding:0; overflow:hidden;
+ }
