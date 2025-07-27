@@ -1,5 +1,4 @@
 let pagenum = 1;
-
 document.getElementById(`next`).onclick = function(){
     pagenum = pagenum + 1
     pagenum >= 605 ? pagenum = 604 : pagenum = pagenum;
