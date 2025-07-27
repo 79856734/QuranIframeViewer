@@ -54,10 +54,12 @@ input {
   top: 0;
   left: 0;
   right: 0;
-  height: calc(100% - 50px);
+  height: calc(100% - 55px);
   width: 100%;
   border: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
+
+.mydiv {position:fixed; bottom:0; left:0; width:100%; height:56px; display:flex; justify-content:space-between; align-items:center; background:#dbcb9d; padding:0 16px;}
