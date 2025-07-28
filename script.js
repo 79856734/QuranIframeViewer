@@ -33,7 +33,7 @@ document.getElementById(`player`).onclick = function(){
 
 document.getElementById(`dark`).onclick = function(){
     if(darkmode == 0){
-        document.getElementById(`myiframe`).style.filter = `invert(100%) hue-rotate(180deg) contrast(125%)`;
+        document.getElementById(`myiframe`).style.filter = `invert(100%) hue-rotate(180deg) contrast(110%)`;
         darkmode = 1
     }
     else if(darkmode == 1){
