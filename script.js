@@ -13,7 +13,7 @@ document.getElementById(`back`).onclick = function(){
     document.getElementById(`myiframe`).setAttribute("src", `https://www.easyquran-eg.com/qrhafs/page/${pagenum}`)
 }
 document.getElementById(`goto`).onclick = function(){
-    pagenum = document.getElementById(`pagenumber`).value;
+    pagenum = parseInt(document.getElementById(`pagenumber`).value, 10);
     pagenum <= 0 ? pagenum = 1 : pagenum = pagenum;
     pagenum >= 605 ? pagenum = 604 : pagenum = pagenum;
     document.getElementById(`myiframe`).setAttribute("src", `https://www.easyquran-eg.com/qrhafs/page/${pagenum}`)
