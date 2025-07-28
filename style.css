@@ -67,6 +67,7 @@ input {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  filter: none;
 }
 
 .mydiv {position:fixed; bottom:0; left:0; width:100%; height:46px; display:flex; justify-content:space-between; align-items:center; background:#dbcb9d; padding:0 16px;}
