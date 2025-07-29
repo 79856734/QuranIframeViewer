@@ -12,6 +12,11 @@ body {
   padding: 20px;
 }
 
+.emoji-fill {
+  color: transparent;
+  text-shadow: 0 0 0 #ffffff;
+}
+
 button,
 a,
 input,
