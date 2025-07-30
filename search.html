@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>البحث عن سور القرآن</title>
+  <style>
+    body { background-color: #dbcb9d; font-family: sans-serif; padding: 20px; }
+    h1 { text-align: center; margin-bottom: 1rem; }
+    #surah-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 0.5rem; }
+    .surah-btn { background-color: #305f4d; padding: 0.5rem; font-size: 0.9rem; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; }
+    button:hover {
+  background-color: #45866d;
+  transition: background-color 0.2s linear;
+}
+button:active {
+  background-color: #218838; 
+  transition: background-color 0s linear;
+}
+  </style>
+</head>
+<body>
+  <h1>اختر السورة</h1>
+  <div id="surah-list">
+    <button class="surah-btn" data-page="1">الفاتحة - 1</button>
+    <button class="surah-btn" data-page="2">البقرة - 2</button>
+    <button class="surah-btn" data-page="50">آل عمران - 50</button>
+    <button class="surah-btn" data-page="77">النساء - 77</button>
+    <button class="surah-btn" data-page="106">المائدة - 106</button>
+    <button class="surah-btn" data-page="128">الأنعام - 128</button>
+    <button class="surah-btn" data-page="151">الأعراف - 151</button>
+    <button class="surah-btn" data-page="178">الأنفال - 178</button>
+    <button class="surah-btn" data-page="187">التوبة - 187</button>
+    <button class="surah-btn" data-page="208">يونس - 208</button>
+    <button class="surah-btn" data-page="221">هود - 221</button>
+    <button class="surah-btn" data-page="235">يوسف - 235</button>
+    <button class="surah-btn" data-page="249">الرعد - 249</button>
+    <button class="surah-btn" data-page="255">إبراهيم - 255</button>
+    <button class="surah-btn" data-page="262">الحجر - 262</button>
+    <button class="surah-btn" data-page="267">النحل - 267</button>
+    <button class="surah-btn" data-page="284">الإسراء - 284</button>
+    <button class="surah-btn" data-page="293">الكهف - 293</button>
+    <button class="surah-btn" data-page="305">مريم - 305</button>
+    <button class="surah-btn" data-page="312">طه - 312</button>
+    <button class="surah-btn" data-page="322">الأنبياء - 322</button>
+    <button class="surah-btn" data-page="332">الحج - 332</button>
+    <button class="surah-btn" data-page="342">المؤمنون - 342</button>
+    <button class="surah-btn" data-page="350">النور - 350</button>
+    <button class="surah-btn" data-page="359">الفرقان - 359</button>
+    <button class="surah-btn" data-page="367">الشعراء - 367</button>
+    <button class="surah-btn" data-page="377">النمل - 377</button>
+    <button class="surah-btn" data-page="385">القصص - 385</button>
+    <button class="surah-btn" data-page="396">العنكبوت - 396</button>
+    <button class="surah-btn" data-page="404">الروم - 404</button>
+    <button class="surah-btn" data-page="411">لقمان - 411</button>
+    <button class="surah-btn" data-page="415">السجدة - 415</button>
+    <button class="surah-btn" data-page="418">الأحزاب - 418</button>
+    <button class="surah-btn" data-page="428">سبأ - 428</button>
+    <button class="surah-btn" data-page="434">فاطر - 434</button>
+    <button class="surah-btn" data-page="440">يس - 440</button>
+    <button class="surah-btn" data-page="446">الصافات - 446</button>
+    <button class="surah-btn" data-page="453">ص - 453</button>
+    <button class="surah-btn" data-page="458">الزمر - 458</button>
+    <button class="surah-btn" data-page="467">غافر - 467</button>
+    <button class="surah-btn" data-page="477">فصلت - 477</button>
+    <button class="surah-btn" data-page="483">الشورى - 483</button>
+    <button class="surah-btn" data-page="489">الزخرف - 489</button>
+    <button class="surah-btn" data-page="496">الدخان - 496</button>
+    <button class="surah-btn" data-page="499">الجاثية - 499</button>
+    <button class="surah-btn" data-page="502">الأحقاف - 502</button>
+    <button class="surah-btn" data-page="507">محمد - 507</button>
+    <button class="surah-btn" data-page="511">الفتح - 511</button>
+    <button class="surah-btn" data-page="515">الحجرات - 515</button>
+    <button class="surah-btn" data-page="518">ق - 518</button>
+    <button class="surah-btn" data-page="520">الذاريات - 520</button>
+    <button class="surah-btn" data-page="523">الطور - 523</button>
+    <button class="surah-btn" data-page="526">النجم - 526</button>
+    <button class="surah-btn" data-page="528">القمر - 528</button>
+    <button class="surah-btn" data-page="531">الرحمن - 531</button>
+    <button class="surah-btn" data-page="534">الواقعة - 534</button>
+    <button class="surah-btn" data-page="537">الحديد - 537</button>
+    <button class="surah-btn" data-page="542">المجادلة - 542</button>
+    <button class="surah-btn" data-page="545">الحشر - 545</button>
+    <button class="surah-btn" data-page="549">الممتحنة - 549</button>
+    <button class="surah-btn" data-page="551">الصف - 551</button>
+    <button class="surah-btn" data-page="553">الجمعة - 553</button>
+    <button class="surah-btn" data-page="554">المنافقون - 554</button>
+    <button class="surah-btn" data-page="556">التغابن - 556</button>
+    <button class="surah-btn" data-page="558">الطلاق - 558</button>
+    <button class="surah-btn" data-page="560">التحريم - 560</button>
+    <button class="surah-btn" data-page="562">الملك - 562</button>
+    <button class="surah-btn" data-page="564">القلم - 564</button>
+    <button class="surah-btn" data-page="566">الحاقة - 566</button>
+    <button class="surah-btn" data-page="568">المعارج - 568</button>
+    <button class="surah-btn" data-page="570">نوح - 570</button>
+    <button class="surah-btn" data-page="572">الجن - 572</button>
+    <button class="surah-btn" data-page="574">المزمل - 574</button>
+    <button class="surah-btn" data-page="575">المدثر - 575</button>
+    <button class="surah-btn" data-page="577">القيامة - 577</button>
+    <button class="surah-btn" data-page="578">الإنسان - 578</button>
+    <button class="surah-btn" data-page="580">المرسلات - 580</button>
+    <button class="surah-btn" data-page="582">النبأ - 582</button>
+    <button class="surah-btn" data-page="583">النازعات - 583</button>
+    <button class="surah-btn" data-page="585">عبس - 585</button>
+<button class="surah-btn" data-page="586">التكوير - 586</button>
+<button class="surah-btn" data-page="587">الانفطار - 587</button>
+<button class="surah-btn" data-page="587">المطففين - 587</button>
+<button class="surah-btn" data-page="589">الانشقاق - 589</button>
+<button class="surah-btn" data-page="590">البروج - 590</button>
+<button class="surah-btn" data-page="591">الطارق - 591</button>
+<button class="surah-btn" data-page="591">الأعلى - 591</button>
+<button class="surah-btn" data-page="592">الغاشية - 592</button>
+<button class="surah-btn" data-page="593">الفجر - 593</button>
+<button class="surah-btn" data-page="594">البلد - 594</button>
+<button class="surah-btn" data-page="595">الشمس - 595</button>
+<button class="surah-btn" data-page="595">الليل - 595</button>
+<button class="surah-btn" data-page="596">الضحى - 596</button>
+<button class="surah-btn" data-page="596">الشرح - 596</button>
+<button class="surah-btn" data-page="597">التين - 597</button>
+<button class="surah-btn" data-page="597">العلق - 597</button>
+<button class="surah-btn" data-page="598">القدر - 598</button>
+<button class="surah-btn" data-page="598">البينة - 598</button>
+<button class="surah-btn" data-page="599">الزلزلة - 599</button>
+<button class="surah-btn" data-page="599">العاديات - 599</button>
+<button class="surah-btn" data-page="600">القارعة - 600</button>
+<button class="surah-btn" data-page="600">التكاثر - 600</button>
+<button class="surah-btn" data-page="601">العصر - 601</button>
+<button class="surah-btn" data-page="601">الهمزة - 601</button>
+<button class="surah-btn" data-page="601">الفيل - 601</button>
+<button class="surah-btn" data-page="602">قريش - 602</button>
+<button class="surah-btn" data-page="602">الماعون - 602</button>
+<button class="surah-btn" data-page="602">الكوثر - 602</button>
+<button class="surah-btn" data-page="603">الكافرون - 603</button>
+<button class="surah-btn" data-page="603">النصر - 603</button>
+<button class="surah-btn" data-page="603">المسد - 603</button>
+<button class="surah-btn" data-page="604">الإخلاص - 604</button>
+<button class="surah-btn" data-page="604">الفلق - 604</button>
+<button class="surah-btn" data-page="604">الناس - 604</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

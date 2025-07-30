@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 767px)">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 767px)">
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="manifest" href="manifest.json" />
@@ -24,17 +23,18 @@
     <iframe class="myiframe" id="myiframe" src="https://www.easyquran-eg.com/qrhafs/page/1"></iframe>
     <div class="mydiv">
   <div>
-    <button id="next" style="margin: 5px;"><</button>
-    <button id="back" style="margin-right: 5px;">></button>
+    <button id="next" ><</button>
+    <button id="back" >></button>
     
   </div>
   <div>
-<button class="player" id="player" type="button"><span class="emoji-fill">🎧</span></button>
+    <button class="player" id="player" type="button"><span class="emoji-fill">🎧</span></button>
+    <a href="search.html"><button type="button"><span class="emoji-fill">🔍</span></button></a>
     <button id="dark" type="button"><span class="emoji-fill">🌙</span></button>
   </div>
   <div>
-    <input id="pagenumber" type="number" style="width:50px;margin-left:5px;">
-    <button id="goto" style="margin-right: 30px;">Go</button>
+    <input id="pagenumber" type="number" />
+  <button id="goto" style="margin-right: 36px;">Go</button>
   </div>
 </div>
 <script src="script.js"></script>
